@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3 #Addiing sqlite3 databases
 
 def connect():
     conn = sqlite3.connect('routine.db')

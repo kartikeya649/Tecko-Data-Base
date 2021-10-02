@@ -6,7 +6,7 @@ def connect():
     cur.execute("CREATE TABLE IF NOT EXISTS routine (Id INTEGER PRIMARY KEY , date text , earnings integer , exercise text , study text , diet text ,python text)")
     conn.commit()
     conn.close()
-
+#defining insert buttons
 def insert(date , earnings , exercise , study , diet , python):
     conn = sqlite3.connect('routine.db')
     cur = conn.cursor()

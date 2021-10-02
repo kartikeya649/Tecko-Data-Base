@@ -4,7 +4,7 @@ import backend
 def get_selected_row(event):
     global selected_row
     index = list.curselection()[0]
-    selected_row = list.get(index)  #Creating Labels
+    selected_row = list.get(index)  #Creating Labels for showing Data
     e1.delete(0,END)
     e1.insert(END,selected_row[1])
     e2.delete(0,END)
